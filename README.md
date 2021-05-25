@@ -2,7 +2,7 @@
 
 ##### **About the Project:**
 
-Using data collected from the Department of Agriculture, Water and the Environment (ABARES) we will look into the consumption of red meat per capitata and explore some of the influence that may have affected this over time. With this data we will also look to predict what consumption of red meat will look like in the future
+Using data collected from the Department of Agriculture, Water and the Environment (ABARES) we will look into the consumption of red meat per capita and explore some of the influence that may have affected this over time. With this data we will also look to predict what consumption of red meat will look like in the future
 
 **Project Timeline:**
 
