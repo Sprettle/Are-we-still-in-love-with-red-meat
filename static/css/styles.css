@@ -5,6 +5,10 @@ html {
 
   /* Box-model */
   min-height: 100%;
+
+  /*Background */
+  background: url("https://food.fnr.sndimg.com/content/dam/images/food/fullset/2021/02/16/different-cuts-of-steak.jpg.rend.hgtvcom.1280.960.suffix/1613578451352.jpeg");
+  background-size: cover;
 }
 
 body {
@@ -28,3 +32,63 @@ body {
 }
 
 /* ----DEFAULT ELEMENT STYLING END---- */
+
+/* Navigation Bar */
+.navbar {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+  background-color: #f1f1f1;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+.navbar-nav .nav-item a {
+  color: black !important;
+}
+
+.navbar-nav .nav-item {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.navbar-nav .dropdown-item {
+  font-size: 18px;
+  line-height: 2em;
+}
+
+.dropdown-menu {
+  margin-left: -105px;
+  margin-top: 4px !important;
+  padding: 20px;
+}
+
+.navbar-nav {
+  float: right;
+}
+
+/* Button*/
+.button {
+  background-color: #f4511e;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+   
+}
+
+.button:hover {opacity: 1}
