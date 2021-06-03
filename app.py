@@ -27,30 +27,29 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
 
-# Pet = create_classes(db)
+Meat = create_classes(db)
 
 # create route that renders index.html template
 @app.route("/")
 def home():
     return render_template("index.html")
 
-@app.route("/inlove")
+@app.route("/inlove.html")
 def page1():
     return render_template("inlove.html")
 
-@app.route("/out-of-love")
+@app.route("/out-of-love.html")
 def page2():
     return render_template("out-of-love.html")
 
 #Meat API page
 @app.route("/api/v1.0/meat")
 def meat():
-    # Create our session (link) from Python to the DB
-    session = Session(engine)
+  
 
-    """Return a list of all water info"""
+    """Return a list of all meat info"""
     # Query all water data
-    results = session.query(meat.year, meat.beef, meat.lamb, meat.pork, meat.chicken).all()
+    results = db.session.query(meat.year, meat.beef, meat.lamb, meat.pork, meat.chicken).all()
 
     session.close()
 
