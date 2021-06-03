@@ -34,11 +34,11 @@ db = SQLAlchemy(app)
 def home():
     return render_template("index.html")
 
-@app.route("/")
+@app.route("/inlove")
 def page1():
     return render_template("inlove.html")
 
-@app.route("/")
+@app.route("/out-of-love")
 def page2():
     return render_template("out-of-love.html")
 
