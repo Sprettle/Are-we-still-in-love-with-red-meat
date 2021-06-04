@@ -3,11 +3,11 @@ def create_classes(db):
         __tablename__ = 'meat'
 
         id = db.Column(db.Integer, primary_key=True)
-        year = db.Column(db.Int)
-        beef = db.Column(db.Int)
-        lamb = db.Column(db.Int)
-        pork = db.Column(db.Int)
-        chicken = db.Column(db.Int)
+        year = db.Column(db.Float)
+        beef = db.Column(db.Float)
+        lamb = db.Column(db.Float)
+        pork = db.Column(db.Float)
+        chicken = db.Column(db.Float)
         
 
         def __repr__(self):
