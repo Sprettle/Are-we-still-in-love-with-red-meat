@@ -2,6 +2,7 @@
 html {
   /* Positioning */
   position: relative;
+  box-sizing: border-box;
 
   /* Box-model */
   min-height: 100%;
@@ -34,30 +35,6 @@ body {
 }
 
 /* ----DEFAULT ELEMENT STYLING END---- */
-
-/* Navigation Bar */
-
-
-
-/* h1 {
-  font-size: larger;
-  color: whitesmoke;
-} */
-
-p {
-  font-size: larger;
-  font-weight: bold;
-  color: black;
-}
-
-article {
-  background-color: rgb(255, 255, 255,0.5);
-    
-}
-
-html {
-  box-sizing: border-box;
-}
 
 /* Typography */
 html,
@@ -93,9 +70,20 @@ h3 {
   margin: 0 auto;
 }
 
-.primary-heading h2 {
-  font-size: 58px;
-  margin-bottom: 35px;
+h4 {
+  color:rgb(172, 32, 32);
+  font-size: 35px;
+  font-weight: bolder;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+h5 {
+  color:rgb(88, 172, 32);
+  font-size: 35px;
+  font-weight: bolder;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 /* Nav */
@@ -120,22 +108,7 @@ h3 {
   font-weight: 600;
 }
 
-/* Jumbotron layout */
-.jumbotron {
-  max-width: 1440px;
-  margin: 0 auto;
-}
-
 /* Hero */
-.jumbotron {
-  color: #600000;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 600px;
-  object-fit: cover;
-}
-
 .hero {
   position: relative;
   height: 550px;
@@ -144,26 +117,9 @@ h3 {
   background-attachment: fixed;
   background-position: bottom center;
   background-size: cover;
+  background-repeat: no-repeat;
 
 }
-.hero .container {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  max-width: 1080px;
-  background: rgba(255, 255, 255, 0.5);
-  max-height: 207px;
-  border-radius: 10px;
-}
-
-.hero .container h1 {
-  font-size: 64px !important;
-  font-weight: bold;
-  text-align: center;
-}
-
 /*Hero backgrounds*/
 .inlove .hero {
   /* background-image: url("https://glmarine.com.my/wp-content/uploads/2017/08/banner-2.jpg"); */
@@ -172,39 +128,46 @@ h3 {
 .out-of-love .hero {
   background-image: url("https://daddysdeals.co.za/sites/default/files/styles/deal-main/public/lifestyle/images/34720-halaal_meat_zone_3.png?itok=4j5PpWEp");
 }
-
+.the-future {
+  background-image: url("../images/meat-meme.png");
+  background-size: 1000px 600px;
+  background-repeat: no-repeat;
+  background-position: top;
 }
 
 /*Information*/
 
+p {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+
+article {
+  background-color: rgb(255, 255, 255,0.7);
+  border-radius: 20px;
+  padding-top: 8px;
+  padding-bottom: 5px;
+  margin-bottom: 80px; 
+}
+
 .container-1 {
-  max-width: 1440px;
-  padding: 200px;
-  margin: 0 auto;
-  margin-bottom: 72px;
+  background-size: 1200px 400px;
+  border-radius: 20px;
+  padding-top: 70px;
+  padding-bottom: 5px;
+  padding: 12px;
+  margin: 20px;
 }
 
-.about h2 {
-  font-size: 58px;
-  margin-bottom: 35px;
-}
-
-.about p {
-  font-size: 18px;
-  line-height: 200%;
-}
-
-/*Menu*/
-.dropdown-item:active {
-  background-color: #e9ecef;
-}
+/* Buttons*/
 
 .button {
   position: absolute;
   top: 80%;
   left: 40%;
 	box-shadow:inset 0px 1px 3px 0px #91b8b3;
-	background:linear-gradient(to bottom, #768d87 5%, #6c7c7c 100%);
+	background:linear-gradient(to bottom, #509b41 5%, #ffffff 100%);
 	background-color:#768d87;
 	border-radius:8px;
 	border:3px solid #566963;
@@ -213,7 +176,7 @@ h3 {
 	color:#ffffff;
 	font-family:Arial;
 	font-size:19px;
-	font-weight:bold;
+	font-weight: normal;
 	padding:11px 23px;
 	text-decoration:none;
 	text-shadow:0px -1px 0px #2b665e;
@@ -227,7 +190,7 @@ h3 {
   top: 80%;
   left: 50%;
 	box-shadow:inset 0px 1px 3px 0px #91b8b3;
-	background:linear-gradient(to bottom, #768d87 5%, #6c7c7c 100%);
+	background:linear-gradient(to bottom, #509b41 5%, #ffffff 100%);
 	background-color:#768d87;
 	border-radius:8px;
 	border:3px solid #566963;
@@ -236,21 +199,21 @@ h3 {
 	color:#ffffff;
 	font-family:Arial;
 	font-size:19px;
-	font-weight:bold;
+	font-weight: normal;
 	padding:11px 23px;
 	text-decoration:none;
 	text-shadow:0px -1px 0px #2b665e;
 }
 .button1:hover {
-	background:linear-gradient(to bottom, #6c7c7c 5%, #768d87 100%);
+	background:linear-gradient(to bottom, #748080 5%, #768d87 100%);
 	background-color:#6c7c7c;
 }
   .button2 {
     position: absolute;
     bottom: 1%;
-    left: 40%;
+    left: 45%;
     box-shadow:inset 0px 1px 3px 0px #91b8b3;
-    background:linear-gradient(to bottom, #768d87 5%, #6c7c7c 100%);
+    background:linear-gradient(to bottom, #509b41 5%, #ffffff 100%);
     background-color:#768d87;
     border-radius:8px;
     border:3px solid #566963;
@@ -267,4 +230,10 @@ h3 {
   .button2:hover {
     background:linear-gradient(to bottom, #6c7c7c 5%, #768d87 100%);
     background-color:#6c7c7c;
+  }
+
+  .graph {
+    width: 90%;
+    margin-left: 100px;
+  }
 

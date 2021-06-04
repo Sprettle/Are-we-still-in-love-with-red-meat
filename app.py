@@ -48,12 +48,12 @@ def meat():
   
 
     """Return a list of all meat info"""
-    # Query all water data
+    # Query all meat data
     results = db.session.query(meat.year, meat.beef, meat.lamb, meat.pork, meat.chicken).all()
 
     session.close()
 
-    # Create a dictionary from the row data and append to a list of all_water
+    # Create a dictionary from the row data and append to a list of all_meat
     all_meat = []
     for year, beef, lamb, pork, chicken in results:
         meat_dict = {}
