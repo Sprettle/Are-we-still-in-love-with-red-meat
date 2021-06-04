@@ -36,14 +36,10 @@ body {
 
 /* ----DEFAULT ELEMENT STYLING END---- */
 
-/* Typography */
-html,
-body,
-h1,
-h2,
-a,
 p {
-  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
 }
 
 h1 {
@@ -136,12 +132,6 @@ h5 {
 }
 
 /*Information*/
-
-p {
-  font-size: 20px;
-  font-weight: bold;
-  color: black;
-}
 
 article {
   background-color: rgb(255, 255, 255,0.7);
