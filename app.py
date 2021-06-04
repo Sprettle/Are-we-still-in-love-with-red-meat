@@ -27,7 +27,7 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
 
-Meat = create_classes(db)
+meat = create_classes(db)
 
 # create route that renders index.html template
 @app.route("/")
@@ -42,6 +42,10 @@ def page1():
 def page2():
     return render_template("out-of-love.html")
 
+@app.route("/the-future.html")
+def page3():
+    return render_template("the-future.html")   
+
 #Meat API page
 @app.route("/api/v1.0/meat")
 def meat():
@@ -51,9 +55,7 @@ def meat():
     # Query all meat data
     results = db.session.query(meat.year, meat.beef, meat.lamb, meat.pork, meat.chicken).all()
 
-    session.close()
-
-    # Create a dictionary from the row data and append to a list of all_meat
+     # Create a dictionary from the row data and append to a list of all_meat
     all_meat = []
     for year, beef, lamb, pork, chicken in results:
         meat_dict = {}
@@ -64,7 +66,7 @@ def meat():
         meat_dict["chicken"] = chicken
         meat.append(meat_dict)
 
-    return jsonify({"data":meat})
+    return jsonify({"data":all_meat})
 
 if __name__ == "__main__":
     app.run()
